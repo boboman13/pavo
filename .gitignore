@@ -1,0 +1,5 @@
+# We love Grunt, but don't like this
+/node_modules
+
+# Output from Grunt
+/pavo.min.js
