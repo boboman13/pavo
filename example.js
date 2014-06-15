@@ -1,5 +1,5 @@
 // pavo and jquery are already loaded
-var content = '<html><body><h1>Hello, {{ name }}.</h1></body></html>'
+var content = '<h1>Hello, {{ name }}.</h1>'
 
 // setup
 var app = pavo()
