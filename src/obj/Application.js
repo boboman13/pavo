@@ -2,6 +2,9 @@ function Application() {
 
 }
 
+// Active Module
+Application.prototype.activeModule = null
+
 // Modules
 Application.prototype.modules = {}
 
@@ -13,8 +16,6 @@ Application.prototype.registerModule = function(route, module) {
 	}
 
 	this.modules[route] = module
-
-	console.log(this.modules)
 }
 
 // GetModule
@@ -29,5 +30,8 @@ Application.prototype.getModule = function(route) {
 
 // Start
 Application.prototype.start = function() {
+	// default route: /
+	this.activeModule = this.getModule('/')
 
+	this.activeModule._display()
 }
