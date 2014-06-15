@@ -7,7 +7,7 @@ module.exports = (grunt) ->
 				files:
 					'pavo.min.js': 'src/**/*.js'
 				options:
-					banner: '/** Pavo. Built by Grunt. **/'
+					banner: '/* Pavo. */'
 					preserveComments: false
 		jshint:
 			all:

@@ -9,6 +9,7 @@ Page.prototype.listeners = {
 
 // Display
 Page.prototype._display = function() {
+
 	$('.pavo-view').html(this.content)
 
 	// Launch events

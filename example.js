@@ -1,5 +1,5 @@
 // pavo and jquery are already loaded
-var content = '<h1>Hello, {{ name }}.</h1>'
+var content = '<h1>Hello, {{name}}.</h1><a href="#/page2">Go to page 2</a>'
 
 // setup
 var app = pavo()
