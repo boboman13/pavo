@@ -9,7 +9,13 @@ module.exports = (grunt) ->
 				options:
 					banner: '/** Pavo. Built by Grunt. **/'
 					preserveComments: false
+		jshint:
+			all:
+				'src/**/*.js'
+			options:
+				jshintrc: '.jshintrc'
 
 	grunt.loadNpmTasks 'grunt-contrib-uglify'
+	grunt.loadNpmTasks 'grunt-contrib-jshint'
 
 	grunt.registerTask 'default', ['uglify']

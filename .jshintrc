@@ -1,0 +1,7 @@
+{
+	"undef": true,
+	"unused": true,
+	"eqeqeq": true,
+	"predef": ["$", "jQuery", "console"],
+	"asi": true
+}
